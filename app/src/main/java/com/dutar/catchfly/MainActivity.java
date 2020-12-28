@@ -69,6 +69,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 textViewTime.setText("Kalan süre: 0");
+
+                hideAllFly();
+
+                handler.removeCallbacks(runnable);
             }
         }.start();
     }
@@ -78,9 +82,8 @@ public class MainActivity extends AppCompatActivity {
         runnable = new Runnable() {
             @Override
             public void run() {
-                for (ImageView image : AllImages) {
-                    image.setVisibility(View.INVISIBLE);
-                }
+                hideAllFly();
+
                 Random random = new Random();
                 int index = random.nextInt(AllImages.length);
                 AllImages[index].setVisibility(View.VISIBLE);
@@ -89,6 +92,11 @@ public class MainActivity extends AppCompatActivity {
         };
 
         handler.post(runnable);
+    }
+
+    private void hideAllFly() {
+        for (ImageView image : AllImages)
+            image.setVisibility(View.INVISIBLE);
     }
 
     public void fly_Click(View view) {
