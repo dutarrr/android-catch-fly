@@ -13,7 +13,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
-        android:text="En Yüksek Skor: "
+        android:text="@string/highestscore"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
-        android:text="Skor: "
+        android:text="@string/score"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/TextViewHighestScore"
@@ -36,7 +36,7 @@
         android:layout_width="250dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
-        android:text="Kalan süre: "
+        android:text="@string/remainingtime"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/TextViewHighestScore"
         app:layout_constraintTop_toBottomOf="@+id/TextViewHighestScore" />
@@ -57,7 +57,7 @@
             app:layout_column="0"
             app:layout_row="0"
             app:srcCompat="@drawable/fly"
-            android:onClick="fly_Click"/>
+            android:onClick="fly_Click" />
 
         <ImageView
             android:id="@+id/imageView2"
