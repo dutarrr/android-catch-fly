@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">CatchFly</string>
-    <string name="highestscore">En Yüksek Skor:</string>
+    <string name="app_name">Sinek Yakala</string>
+    <string name="highest_score">Rekor:</string>
     <string name="score">Skor:</string>
-    <string name="remainingtime">Kalan süre: </string>
+    <string name="remaining_time">Kalan süre: </string>
 </resources>

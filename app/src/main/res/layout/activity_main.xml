@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
 
     <TextView
-        android:id="@+id/TextViewHighestScore"
+        android:id="@+id/textViewHighestScore"
         android:layout_width="140dp"
         android:layout_height="30dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/highestscore"
-        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:gravity="bottom"
+        android:text="@string/highest_score"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,12 +26,15 @@
         android:layout_width="140dp"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        android:gravity="bottom"
         android:text="@string/score"
-        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/TextViewHighestScore"
+        app:layout_constraintStart_toEndOf="@+id/textViewHighestScore"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -36,10 +42,13 @@
         android:layout_width="250dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
-        android:text="@string/remainingtime"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/TextViewHighestScore"
-        app:layout_constraintTop_toBottomOf="@+id/TextViewHighestScore" />
+        android:gravity="bottom"
+        android:text="@string/remaining_time"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewHighestScore"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHighestScore" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
@@ -57,7 +66,7 @@
             app:layout_column="0"
             app:layout_row="0"
             app:srcCompat="@drawable/fly"
-            android:onClick="fly_Click" />
+            android:onClick="Fly_Click" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -65,7 +74,7 @@
             android:layout_height="120dp"
             app:layout_column="1"
             app:layout_row="0"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
 
         <ImageView
             android:id="@+id/imageView3"
@@ -73,7 +82,7 @@
             android:layout_height="120dp"
             app:layout_column="2"
             app:layout_row="0"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
 
         <ImageView
             android:id="@+id/imageView4"
@@ -81,7 +90,7 @@
             android:layout_height="120dp"
             app:layout_column="3"
             app:layout_row="0"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click" />
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -89,7 +98,7 @@
             android:layout_height="120dp"
             app:layout_column="0"
             app:layout_row="1"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
 
         <ImageView
             android:id="@+id/imageView6"
@@ -97,7 +106,7 @@
             android:layout_height="120dp"
             app:layout_column="1"
             app:layout_row="1"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
 
         <ImageView
             android:id="@+id/imageView7"
@@ -105,14 +114,14 @@
             android:layout_height="120dp"
             app:layout_column="2"
             app:layout_row="1"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="80dp"
             android:layout_height="120dp"
             app:layout_column="3"
             app:layout_row="1"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
 
         <ImageView
             android:id="@+id/imageView9"
@@ -120,7 +129,7 @@
             android:layout_height="120dp"
             app:layout_column="0"
             app:layout_row="2"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
 
         <ImageView
             android:id="@+id/imageView10"
@@ -128,7 +137,7 @@
             android:layout_height="120dp"
             app:layout_column="1"
             app:layout_row="2"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
 
         <ImageView
             android:id="@+id/imageView11"
@@ -136,7 +145,7 @@
             android:layout_height="120dp"
             app:layout_column="2"
             app:layout_row="2"
-            app:srcCompat="@drawable/fly" android:onClick="fly_Click"/>
+            app:srcCompat="@drawable/fly" android:onClick="Fly_Click"/>
         <ImageView
             android:id="@+id/imageView12"
             android:layout_width="80dp"
@@ -146,5 +155,33 @@
             app:srcCompat="@drawable/fly" />
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="ButtonStart_Click"
+        android:text="Başla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:adSize="BANNER"-->
+<!--        app:adUnitId="ca-app-pub-2121944640770546/6024632503"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.534"-->
+<!--        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>-->
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
